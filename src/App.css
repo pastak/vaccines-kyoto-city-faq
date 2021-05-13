@@ -1,5 +1,5 @@
 .App {
-  text-align: center;
+  
 }
 
 .App-logo {
@@ -13,9 +13,14 @@
   }
 }
 
+.App section {
+  margin: 1vh 5vw;
+}
+
 .App-header {
+  text-align: center;
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 5vh;
   display: flex;
   flex-direction: column;
   align-items: center;
