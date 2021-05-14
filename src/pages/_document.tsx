@@ -31,6 +31,14 @@ class MyDocument extends Document {
             gtag('config', 'G-QQ2EB6SVNT');`}} />
           <Main />
           <NextScript />
+          <footer>
+            <p>
+              このウェブページでは、Googleによるアクセス解析ツール「Googleアナリティクス」を使用しています。このGoogleアナリティクスはデータの収集のためにCookieを使用しています。このデータは匿名で収集されており、個人を特定するものではありません。
+            </p>
+            <p>
+              This webpage is created by <a href='https://github.com/pastak' target='_blank' rel="noreferrer">@pastak</a>
+            </p>
+          </footer>
         </body>
       </Html>
     )
