@@ -14,7 +14,7 @@ export const FAQList: React.VFC = () => {
         return <section
           key={`faq-${index}`} className='faq' id={id}
         >
-          <h3>{`Q${index}: ${question}`}<a href={`#${id}`} title="このセクションへのリンク">#</a></h3>
+          <h3>{`Q${index}: ${question}`}<a href={`#${id}`} title="このセクションへのリンク" aria-label="このセクションへのリンク">#</a></h3>
           <p dangerouslySetInnerHTML={answer}></p>
         </section>;
       })
