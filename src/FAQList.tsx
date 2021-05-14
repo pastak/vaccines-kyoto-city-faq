@@ -7,12 +7,15 @@ export const FAQList: React.VFC = () => {
 
   return <>
     {
-      parsedData.map(([question, answer], index) => <section
-        key={`faq-${index}`} className='faq' id={`faq-${index}`}
-      >
-        <h3>{question}</h3>
-        <p dangerouslySetInnerHTML={answer}></p>
-      </section>)
+      parsedData.map(([question, answer], i) => {
+        const index = i + 1;
+        return <section
+          key={`faq-${index}`} className='faq' id={`faq-${index}`}
+        >
+          <h3>{`Q${index}: ${question}`}</h3>
+          <p dangerouslySetInnerHTML={answer}></p>
+        </section>;
+      })
     }
   </>
 }
