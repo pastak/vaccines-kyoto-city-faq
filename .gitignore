@@ -25,3 +25,5 @@ yarn-error.log*
 images/
 gh-pages-actions
 gh-pages-actions.pub
+
+.next
