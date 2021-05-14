@@ -2,7 +2,6 @@
   "name": "vaccines-kyoto-city-faq",
   "version": "0.1.0",
   "private": true,
-  "type": "module",
   "homepage": "/vaccines-kyoto-city-faq",
   "dependencies": {
     "@testing-library/jest-dom": "^5.12.0",
