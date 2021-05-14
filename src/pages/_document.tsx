@@ -22,6 +22,13 @@ class MyDocument extends Document {
           <link href="%PUBLIC_URL%" rel="canonical" />
         </Head>
         <body>
+          <script async src="https://www.googletagmanager.com/gtag/js?id=G-QQ2EB6SVNT"></script>
+          <script dangerouslySetInnerHTML={{__html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-QQ2EB6SVNT');`}} />
           <Main />
           <NextScript />
         </body>
