@@ -27,6 +27,7 @@ jobs:
       run: npm run build
     - name: Export build
       run: npm run export
+      if: github.ref == 'refs/heads/master'
     - name: Deploy to gh-pages
       if: github.ref == 'refs/heads/master'
       uses: peaceiris/actions-gh-pages@v3
