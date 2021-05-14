@@ -1,6 +1,6 @@
-import React from 'react';
 import './App.css';
 import {FAQList} from './FAQList';
+import {Footer} from './Footer'
 
 function App() {
   return (
@@ -32,6 +32,7 @@ function App() {
       <main>
         <FAQList />
       </main>
+      <Footer />
     </div>
   );
 }
