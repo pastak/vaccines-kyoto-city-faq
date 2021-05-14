@@ -8,6 +8,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
+    - uses: actions/cache@master
+        with:
+          path: |
+            ~/.npm
+          key: deploy-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            deploy-
     - name: Use Node.js 16
       uses: actions/setup-node@v1
       with:

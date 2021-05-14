@@ -1,0 +1,27 @@
+name: Check Updates
+on:
+  schedule:
+    - cron:  '0 * * * *'
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: Use Node.js 16
+      uses: actions/setup-node@v1
+      with:
+        node-version: 16
+    - name: Install Packages
+      run: npm install
+    - name: Check PDF Link
+      run: node scripts/check-pdf.js
+    - uses: sonots/slack-notice-action@v3
+      with:
+        title: 'https://github.com/pastak/vaccines-kyoto-city-faq'
+        text_on_fail: 'PDFへのリンクの取得に失敗したかリンク先が変更されました https://vaccines-kyoto-city.jp/#faq'
+        status: ${{ job.status }}
+        only_mention_fail: 'U0326Q0AY'
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+      if: failure()
