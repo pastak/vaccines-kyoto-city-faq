@@ -1,7 +1,6 @@
 import { useMemo } from "react"
-import { faqParser } from './lib/parser';
+import { faqParser } from '../lib/parser';
 import { faqData } from './data';
-import './FAQList.css';
 
 export const FAQList: React.VFC = () => {
   const parsedData = useMemo(() => faqParser(faqData), []);
