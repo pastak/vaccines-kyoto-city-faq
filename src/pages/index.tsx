@@ -1,6 +1,5 @@
 import React from 'react';
-import './App.css';
-import {FAQList} from './FAQList';
+import {FAQList} from '../components/FAQList';
 
 function App() {
   return (
