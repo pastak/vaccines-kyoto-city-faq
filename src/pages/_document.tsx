@@ -30,15 +30,16 @@ class MyDocument extends Document {
 
             gtag('config', 'G-QQ2EB6SVNT');`}} />
           <Main />
-          <NextScript />
+          <hr />
           <footer>
             <p>
               このウェブページでは、Googleによるアクセス解析ツール「Googleアナリティクス」を使用しています。このGoogleアナリティクスはデータの収集のためにCookieを使用しています。このデータは匿名で収集されており、個人を特定するものではありません。
             </p>
             <p>
-              This webpage is created by <a href='https://github.com/pastak' target='_blank' rel="noreferrer">@pastak</a>
+              This webpage is created by <a href='https://github.com/pastak' target='_blank' rel="noreferrer">@pastak</a> and <a href='https://github.com/pastak/vaccines-kyoto-city-faq/graphs/contributors' target='_blank' rel="noreferrer">all contributors</a>
             </p>
           </footer>
+          <NextScript />
         </body>
       </Html>
     )
