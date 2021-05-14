@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/vaccines-kyoto-city-faq/static/css/main.240f7d03.chunk.css",
-    "main.js": "/vaccines-kyoto-city-faq/static/js/main.12031f0b.chunk.js",
-    "main.js.map": "/vaccines-kyoto-city-faq/static/js/main.12031f0b.chunk.js.map",
+    "main.js": "/vaccines-kyoto-city-faq/static/js/main.b51c273b.chunk.js",
+    "main.js.map": "/vaccines-kyoto-city-faq/static/js/main.b51c273b.chunk.js.map",
     "runtime-main.js": "/vaccines-kyoto-city-faq/static/js/runtime-main.20f6cdcc.js",
     "runtime-main.js.map": "/vaccines-kyoto-city-faq/static/js/runtime-main.20f6cdcc.js.map",
     "static/js/2.18f32e67.chunk.js": "/vaccines-kyoto-city-faq/static/js/2.18f32e67.chunk.js",
@@ -15,6 +15,6 @@
     "static/js/runtime-main.20f6cdcc.js",
     "static/js/2.18f32e67.chunk.js",
     "static/css/main.240f7d03.chunk.css",
-    "static/js/main.12031f0b.chunk.js"
+    "static/js/main.b51c273b.chunk.js"
   ]
 }
