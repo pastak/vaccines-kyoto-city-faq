@@ -11,7 +11,6 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
-          <meta charSet="utf-8" />
           <meta
             name="description"
             content="このウェブページは京都市新型コロナワクチン接種ポータルサイトのよくあるお問合せについてのPDFをOCR読み取り(画像の自動読み取り)をした結果を掲載したものです。全ての情報については京都市のウェブサイトを確認するようにしてください。"
