@@ -2,7 +2,9 @@
 
 https://vaccines-kyoto-city.jp/#faq をHTML化したものです。
 
-https://pastak.github.io/vaccines-kyoto-city-faq/ でアクセスできます
+https://pastak.github.io/vaccines-kyoto-city-faq/ でアクセスできます。
+
+ブログ記事: [「京都市新型コロナワクチン接種ポータルサイト」のよくあるお問合せをHTML化しました \- ぱすたけ日記](https://blog.pastak.net/entry/2021/05/14/090000)
 
 ## ライセンスと権利について
 
