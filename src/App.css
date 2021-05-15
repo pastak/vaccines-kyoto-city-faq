@@ -17,3 +17,7 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+
+footer {
+  margin: 1vh 5vw;
+}

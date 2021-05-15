@@ -1,10 +1,14 @@
-import './App.css';
-import {FAQList} from './FAQList';
-import {Footer} from './Footer'
+import React from 'react';
+import Head from 'next/head';
+import {FAQList} from '../components/FAQList';
+import {FAQJsonLD} from '../components/FAQJsonLD'
 
 function App() {
   return (
     <div className="App">
+      <Head>
+        <FAQJsonLD />
+      </Head>
       <header className="App-header">
         京都市新型コロナワクチン接種ポータルサイト よくあるお問合せについて (勝手版)
       </header>
@@ -32,7 +36,6 @@ function App() {
       <main>
         <FAQList />
       </main>
-      <Footer />
     </div>
   );
 }
