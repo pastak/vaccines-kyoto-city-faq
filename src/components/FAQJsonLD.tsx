@@ -1,4 +1,4 @@
-import { parsedFaqData } from './data';
+import { parsedFaqData } from "./data";
 
 export const FAQJsonLD: React.VFC = () => {
   const mainEntity = parsedFaqData.map(([question, answer], i) => {
@@ -9,17 +9,14 @@ export const FAQJsonLD: React.VFC = () => {
       url: `https://pastak.github.io/vaccines-kyoto-city-faq/#faq-${index}`,
       acceptedAnswer: {
         "@type": "Answer",
-        text: answer
-      }
+        text: answer,
+      },
     };
   });
   const jsonLd = JSON.stringify({
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    mainEntity
+    mainEntity,
   });
-  return <script
-    type="application/ld+json"
-    dangerouslySetInnerHTML={{ __html: jsonLd }}
-  />
-}
+  return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd }} />;
+};
