@@ -1,4 +1,4 @@
-import Document, { DocumentContext, Html, Head, Main, NextScript } from "next/document";
+import Document, { DocumentContext, Html, Head, Main, NextScript } from 'next/document';
 
 class MyDocument extends Document {
   static async getInitialProps(ctx: DocumentContext) {
@@ -31,8 +31,8 @@ class MyDocument extends Document {
           <script
             dangerouslySetInnerHTML={{
               __html:
-                "window.dataLayer = window.dataLayer || [];" +
-                "function gtag(){dataLayer.push(arguments);};" +
+                'window.dataLayer = window.dataLayer || [];' +
+                'function gtag(){dataLayer.push(arguments);};' +
                 "gtag('js', new Date());" +
                 "gtag('config', 'G-QQ2EB6SVNT');",
             }}
@@ -44,11 +44,11 @@ class MyDocument extends Document {
               このウェブページでは、Googleによるアクセス解析ツール「Googleアナリティクス」を使用しています。このGoogleアナリティクスはデータの収集のためにCookieを使用しています。このデータは匿名で収集されており、個人を特定するものではありません。
             </p>
             <p>
-              This webpage is created by{" "}
+              This webpage is created by{' '}
               <a href="https://github.com/pastak" target="_blank" rel="noreferrer">
                 @pastak
-              </a>{" "}
-              and{" "}
+              </a>{' '}
+              and{' '}
               <a
                 href="https://github.com/pastak/vaccines-kyoto-city-faq/graphs/contributors"
                 target="_blank"
