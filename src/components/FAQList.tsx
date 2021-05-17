@@ -1,4 +1,4 @@
-import { parsedFaqData } from './data';
+import { parsedFaqData } from "./data";
 
 export const FAQList: React.VFC = () => {
   return (

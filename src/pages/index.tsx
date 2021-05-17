@@ -1,7 +1,7 @@
-import React from 'react';
-import Head from 'next/head';
-import { FAQList } from '../components/FAQList';
-import { FAQJsonLD } from '../components/FAQJsonLD';
+import React from "react";
+import Head from "next/head";
+import { FAQList } from "../components/FAQList";
+import { FAQJsonLD } from "../components/FAQJsonLD";
 
 function App() {
   return (
@@ -29,7 +29,7 @@ function App() {
         </a>
         にお知らせください。
         <br />
-        このウェブページについて詳しく知りたい:{' '}
+        このウェブページについて詳しく知りたい:{" "}
         <a href="https://blog.pastak.net/entry/2021/05/14/090000" target="_blank" rel="noreferrer">
           「京都市新型コロナワクチン接種ポータルサイト」のよくあるお問合せをHTML化しました -
           ぱすたけ日記
@@ -49,8 +49,8 @@ function App() {
               rel="noreferrer"
             >
               元PDFへのリンク
-            </a>{' '}
-            /{' '}
+            </a>{" "}
+            /{" "}
             <a
               target="_blank"
               href="https://github.com/pastak/vaccines-kyoto-city-faq/blob/master/archives/yokuaru030427.pdf"

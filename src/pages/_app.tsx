@@ -1,10 +1,10 @@
-import React from 'react';
-import { AppProps } from 'next/app';
-import Head from 'next/head';
+import React from "react";
+import { AppProps } from "next/app";
+import Head from "next/head";
 
-import '../index.css';
-import '../App.css';
-import '../FAQList.css';
+import "../index.css";
+import "../App.css";
+import "../FAQList.css";
 
 const App = ({ Component, pageProps }: AppProps) => {
   return (
