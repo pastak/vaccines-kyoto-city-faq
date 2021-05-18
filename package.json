@@ -20,9 +20,15 @@
     "export": "next export",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint src/** --ext .ts,.tsx",
-    "lint:fix": "npm run format && eslint src/** --ext .ts,.tsx --fix",
-    "format": "prettier --config .prettierrc --write '**/*.tsx'"
+    "lint": "npm run prettier && npm run eslint",
+    "lint:ci": "npm run prettier:ci && npm run eslint:ci",
+    "lint:fix": "npm run prettier:fix && npm run eslint:fix",
+    "eslint": "eslint src/** --ext .ts,.tsx",
+    "eslint:ci": "eslint src/** --ext .ts,.tsx --quiet",
+    "eslint:fix": "eslint src/** --ext .ts,.tsx --fix",
+    "prettier": "prettier --config .prettierrc --check '**/*.{ts,tsx}'",
+    "prettier:ci": "prettier --config .prettierrc --check --loglevel=silent '**/*.{ts,tsx}'",
+    "prettier:fix": "prettier --config .prettierrc --write '**/*.{ts,tsx}'"
   },
   "eslintConfig": {
     "extends": [

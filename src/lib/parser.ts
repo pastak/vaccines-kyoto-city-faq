@@ -1,8 +1,8 @@
-/* eslint-disable */
 type FAQ = Readonly<[question: string, answer: string]>;
 export const faqParser = (faq: string): Readonly<FAQ[]> => {
   let lines = faq.split("\n");
   const result: FAQ[] = [];
+  // eslint-disable-next-line no-constant-condition
   while (1) {
     const [q, a, ...arr] = lines;
     result.push([q, a]);
