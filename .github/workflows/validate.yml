@@ -1,4 +1,4 @@
-name: Deployment
+name: ValidationCheck
 on:
   pull_request:
 
