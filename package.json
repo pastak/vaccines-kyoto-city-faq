@@ -21,7 +21,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint src/** --ext .ts,.tsx",
-    "lint:fix": "eslint src/** --ext .ts,.tsx --fix && npm run format",
+    "lint:fix": "npm run format && eslint src/** --ext .ts,.tsx --fix",
     "format": "prettier --config .prettierrc --write '**/*.tsx'"
   },
   "eslintConfig": {
