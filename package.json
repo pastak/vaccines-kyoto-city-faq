@@ -19,7 +19,10 @@
     "dev": "next dev",
     "export": "next export",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "lint": "eslint src/** --ext .ts,.tsx",
+    "lint:fix": "npm run format && eslint src/** --ext .ts,.tsx --fix",
+    "format": "prettier --config .prettierrc --write '**/*.tsx'"
   },
   "eslintConfig": {
     "extends": [
@@ -38,5 +41,14 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.23.0",
+    "@typescript-eslint/parser": "^4.23.0",
+    "eslint": "^7.26.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-react": "^7.23.2",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "prettier": "^2.3.0"
   }
 }
