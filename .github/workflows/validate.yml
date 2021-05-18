@@ -1,0 +1,26 @@
+name: Deployment
+on:
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - uses: actions/cache@v2
+      with:
+        path: |
+          ~/.npm
+        key: validate-${{ hashFiles('**/package-lock.json') }}
+        restore-keys: |
+          validate-
+    - name: Use Node.js 16
+      uses: actions/setup-node@v2
+      with:
+        node-version: 16
+    - name: Install Packages
+      run: npm ci
+    - name: package-lock.json validation
+      uses: hata6502/no-broken-dependency-action@main
+    - name: linters
+      run: npm run lint:ci
