@@ -18,7 +18,7 @@
       "version": "detect"
     }
   },
-  "plugins": ["react-hooks", "react", "@typescript-eslint", "prettier"],
+  "plugins": ["react-hooks", "react", "@typescript-eslint"],
   "extends": [
     "eslint:recommended",
     "plugin:@typescript-eslint/eslint-recommended",
@@ -31,7 +31,6 @@
   ],
   "rules": {
     "react/prop-types": "off",
-    "prettier/prettier": "error",
     "react/react-in-jsx-scope": "off"
   },
   "overrides": [
