@@ -1,10 +1,4 @@
 {
-  "env": {
-    "es6": true,
-    "node": true,
-    "browser": true,
-    "commonjs": true
-  },
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "ecmaVersion": 2021,
